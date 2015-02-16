@@ -16,5 +16,3 @@ class VagrantBoot2Docker < Formula
 
   end
 end
-
-__END__
