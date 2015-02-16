@@ -10,4 +10,4 @@ cask :v1 => 'vagrant-boot2docker' do
   depends_on :cask => 'vagrant'
 
   binary 'vagrant-boot2docker'
-end§
+end
