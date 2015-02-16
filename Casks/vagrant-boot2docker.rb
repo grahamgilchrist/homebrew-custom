@@ -1,20 +1,13 @@
-require "formula"
+cask :v1 => 'vagrant-boot2docker' do
+  version :latest
+  sha256 :no_check
 
-class VagrantBoot2Docker < Formula
-  homepage "https://www.github.com/grahamgilchrist/vagrant-boot2docker"
-  url "https://github.com/grahamgilchrist/vagrant-boot2docker", :using => :git, :tag => "0.0.1"
+  url 'https://github.com/grahamgilchrist/vagrant-boot2docker/archive/0.0.1.zip'
+  homepage 'https://github.com/grahamgilchrist/vagrant-boot2docker'
+  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   ## Dependencies
   depends_on :cask => 'vagrant'
 
-  ## The install method.
-
-  def install
-    # If your formula's build system is not thread safe:
-    ENV.deparallelize
-
-    # No "make", "install" available?
-    bin.install "vagrant-boot2docker"
-
-  end
-end
+  binary 'vagrant-boot2docker'
+end§
