@@ -9,13 +9,12 @@ class VagrantBoot2docker < Formula
   #depends_on :cask => 'vagrant'
 
   ## The install method.
-
   def install
     # If your formula's build system is not thread safe:
     ENV.deparallelize
 
-    # No "make", "install" available?
     bin.install "vagrant-boot2docker"
+    prefix.install "Vagrantfile"
 
   end
 end
