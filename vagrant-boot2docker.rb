@@ -1,6 +1,6 @@
 require 'formula'
 
-class VagrantBoot2Docker < Formula
+class VagrantBoot2docker < Formula
   homepage 'https://www.github.com/grahamgilchrist/vagrant-boot2docker'
   url 'https://github.com/grahamgilchrist/vagrant-boot2docker/archive/0.0.1.zip'
 
