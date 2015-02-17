@@ -3,7 +3,7 @@ require 'formula'
 class VagrantBoot2docker < Formula
   homepage 'https://www.github.com/grahamgilchrist/vagrant-boot2docker'
   url 'https://github.com/grahamgilchrist/vagrant-boot2docker/archive/0.0.3.zip'
-  sha1 '6e26d1633ca54a41cdcf85ad81ee461b917fb91d'
+  sha1 'c17357f5ecfb7e5a06aa1ed7d79c06118eb6e245'
 
   ## Dependencies
   #depends_on :cask => 'vagrant'
