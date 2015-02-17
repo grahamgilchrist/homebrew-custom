@@ -17,7 +17,9 @@ class VagrantBoot2docker < Formula
     #libexec.install "Vagrantfile"
 
     libexec.install Dir['*']
+    libexec.chmod 'a+x', 'vagrant-boot2docker'
     bin.install_symlink libexec+'vagrant-boot2docker'
+    
 
   end
 end
