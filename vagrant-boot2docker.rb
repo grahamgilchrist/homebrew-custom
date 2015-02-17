@@ -5,7 +5,7 @@ class VagrantBoot2Docker < Formula
   url "https://github.com/grahamgilchrist/vagrant-boot2docker", :using => :git, :tag => "0.0.1"
 
   ## Dependencies
-  depends_on :cask => 'vagrant'
+  #depends_on :cask => 'vagrant'
 
   ## The install method.
 
