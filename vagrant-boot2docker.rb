@@ -12,7 +12,7 @@ class VagrantBoot2docker < Formula
 
     # Warn that we need vagrant to work
     opoo 'You must have brew cask and vagrant installed for this package to work'
-    opoo 'brew install cask && brew cask install vagrant'
+    opoo 'brew install caskroom/cask/brew-cask && brew cask install vagrant'
 
     libexec.install Dir['*']
     (libexec+'vagrant-boot2docker').chmod 0755
