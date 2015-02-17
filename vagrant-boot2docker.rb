@@ -1,7 +1,7 @@
-require "formula"
+require 'formula'
 
 class VagrantBoot2Docker < Formula
-  homepage "https://www.github.com/grahamgilchrist/vagrant-boot2docker"
+  homepage 'https://www.github.com/grahamgilchrist/vagrant-boot2docker'
   url 'https://github.com/grahamgilchrist/vagrant-boot2docker/archive/0.0.1.zip'
 
   ## Dependencies
