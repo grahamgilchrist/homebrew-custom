@@ -11,10 +11,10 @@ class VagrantBoot2docker < Formula
 
   def install
     # If your formula's build system is not thread safe:
-    #ENV.deparallelize
+    ENV.deparallelize
 
     # No "make", "install" available?
-    #bin.install "vagrant-boot2docker"
+    bin.install "vagrant-boot2docker"
 
   end
 end
