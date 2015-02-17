@@ -14,7 +14,7 @@ class VagrantBoot2docker < Formula
     ENV.deparallelize
 
     bin.install "vagrant-boot2docker"
-    prefix.install "Vagrantfile"
+    libexec.install "Vagrantfile"
 
   end
 end
