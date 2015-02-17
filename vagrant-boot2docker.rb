@@ -2,7 +2,7 @@ require 'formula'
 
 class VagrantBoot2docker < Formula
   homepage 'https://www.github.com/grahamgilchrist/vagrant-boot2docker'
-  url 'https://github.com/grahamgilchrist/vagrant-boot2docker/archive/0.0.4.tar.gz'
+  url 'https://github.com/grahamgilchrist/vagrant-boot2docker/archive/0.0.5.tar.gz'
   sha1 '78ce0fdc10d2c73bcf7d3bd8c83c8f093692dde6'
 
   ## The install method.
