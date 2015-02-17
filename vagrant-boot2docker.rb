@@ -10,13 +10,18 @@ class VagrantBoot2docker < Formula
     # If your formula's build system is not thread safe:
     ENV.deparallelize
 
-    # Warnt hat we need vagrant to work
+    # Warn that we need vagrant to work
     opoo 'You must have brew cask and vagrant installed for this package to work'
     opoo 'brew install cask && brew cask install vagrant'
 
     libexec.install Dir['*']
     (libexec+'vagrant-boot2docker').chmod 0755
     bin.install_symlink libexec+'vagrant-boot2docker'
+
+    # Todo:
+    # uninstall screipt that runs vagrant destroy in libexec
+    # Otherwise we can end up with the vagrant image still running 
+    #  after we uninstall or upgrade and it can not be stopped
 
   end
 end
