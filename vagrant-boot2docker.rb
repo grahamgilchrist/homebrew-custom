@@ -13,8 +13,11 @@ class VagrantBoot2docker < Formula
     # If your formula's build system is not thread safe:
     ENV.deparallelize
 
-    bin.install "vagrant-boot2docker"
-    libexec.install "Vagrantfile"
+    #bin.install "vagrant-boot2docker"
+    #libexec.install "Vagrantfile"
+
+    libexec.install Dir['*']
+    bin.install_symlink libexec+'vagrant-boot2docker'
 
   end
 end
